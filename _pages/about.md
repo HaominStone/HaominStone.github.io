@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Haomin Stone's website"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+A ship in harbor is safe, but that's not what ships are built for
+
+Hi, it's Haomin Stone
+=====
+I am a currently a senior student at [Shanghaitech University](http://www.shanghaitech.edu.cn/eng/). I am enrolled in the [School of Infomation Science and Technology](http://sist.shanghaitech.edu.cn/sist_en/), and major in Computer Science. I love playing soccer. Usually playing in Left Back or Center Back. My best score was the third price in Shanghaitech Baoguo Cup, and scored by heading in the (third place match)[https://www.bilibili.com/video/av27530385?p=2]. My favorite game is League of Legends, and I play JUNGLE and SUPPORT most of the time. My favorite book is Le Petit Prince(The Little Prince), and my favorite movie is Catch Me If You Can, though there are a great many movies I love.
+
+Research Overview
+=====
+I have been working in [The ShanghaiTech Multi-Agent systems Research Team (SMART)](http://dengji-zhao.net/smart/index.html)  supervised by Prof. Dengji Zhao. I have joined [Mobile Perception Lab(MPL)](http://mpl.sist.shanghaitech.edu.cn/MPL@shanghaitech.html) supervised by Prof. Laurent Kneip. My research interest is in Simultaneous Localization and Mapping(SLAM), Computer Vision, Robot Perception and Multi-agent Collaboration Strategies. I believe that the Multi-agents' collaboration strategies can be used on the future autonomous driving where each intelligent vehicle need to learn to cooperate under unexpected situations. The detail will be listed in the (researches)[/researches/]
+
+<!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 A data-driven personal website
 ======
@@ -47,4 +57,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
