@@ -247,6 +247,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  #courses
   - scope:
       path: ""
       type: courses
