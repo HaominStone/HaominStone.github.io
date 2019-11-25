@@ -1,0 +1,89 @@
+Optimization of Visual Odometry System  
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{cpp_pip.png}
+\doxyfigcaption{cpp\+\_\+pip}
+\end{DoxyImage}
+  
+
+\mbox{[}\href{CPP_Final_project.pdf}{\texttt{ Slides}}\mbox{]} \mbox{[}\href{./Doxygen/html/index.html}{\texttt{ Doxygen}}\mbox{]}\hypertarget{index_autotoc_md1}{}\doxysection{Project Description}\label{index_autotoc_md1}
+​\+This project builds a visual odometry system with the local optimization (Bundle Adjustment) as well as the global optimization (Loop Closure).\hypertarget{index_autotoc_md2}{}\doxysection{Dependency}\label{index_autotoc_md2}
+
+\begin{DoxyItemize}
+\item \href{https://vision.in.tum.de/data/datasets/rgbd-dataset/download}{\texttt{ tum\+\_\+dataset fr2/desk}} (R\+G\+B-\/D S\+L\+AM Dataset and Benchmark)
+\item \href{http://eigen.tuxfamily.org/index.php?title=Main_Page}{\texttt{ Eigen}} (a C++ template library for linear algebra)
+\item \href{https://opencv.org/releases/}{\texttt{ Open\+CV}} (open source computer vision library)
+\item \href{http://www.ceres-solver.org/}{\texttt{ Ceres}} (an open source C++ library for modeling and solving large, complicated optimization problems)
+\item \href{https://www.boost.org/}{\texttt{ Boost}} (provide free peer-\/reviewed portable C++ source libraries)
+\item \href{https://github.com/borglab/gtsam/releases}{\texttt{ gtsam}} (Georgia Tech Smoothing and Mapping library, 4.\+0.\+0-\/alpha2)
+\end{DoxyItemize}\hypertarget{index_autotoc_md3}{}\doxysection{Compile}\label{index_autotoc_md3}
+You can use the following commands to compile the package.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkdir build}
+\DoxyCodeLine{cd build}
+\DoxyCodeLine{cmake ..}
+\DoxyCodeLine{make}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md4}{}\doxysection{Run the package}\label{index_autotoc_md4}
+To run a demo, you can use the following commands.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd build/test}
+\DoxyCodeLine{./test\_main}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md5}{}\doxysection{How to use evaluation scripts?}\label{index_autotoc_md5}
+
+\begin{DoxyEnumerate}
+\item Put your depth map at {\ttfamily ./evaluation/} folder(in format same with ground truth).
+\item Run {\ttfamily ./triangulation\+\_\+evaluation/evaluate\+\_\+ate.py} with parameter, parameter help is written in the python parse format.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md6}{}\doxysection{File Structure}\label{index_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{├── Readme.md}
+\DoxyCodeLine{├── data}
+\DoxyCodeLine{│   └── rgbd\_dataset\_freiburg2\_desk  (dataset)}
+\DoxyCodeLine{├── vo}
+\DoxyCodeLine{│   ├── vo\_tools.hpp                 (visual odometry functions)}
+\DoxyCodeLine{│   └── vo\_tools.cpp}
+\DoxyCodeLine{├── ba}
+\DoxyCodeLine{│   ├── ba\_tools.hpp                 (bundle adjustment functions)}
+\DoxyCodeLine{│   └── ba\_tools.cpp}
+\DoxyCodeLine{├── bag\_of\_words}
+\DoxyCodeLine{│   ├── bow\_tools.hpp                (bag of words functions)}
+\DoxyCodeLine{│   └── bow\_tools.cpp}
+\DoxyCodeLine{├── loop\_closure}
+\DoxyCodeLine{│   ├── LC\_tools.hpp                 (loop closure functions)}
+\DoxyCodeLine{│   └── LC\_tools.cpp}
+\DoxyCodeLine{├── test}
+\DoxyCodeLine{│   ├── main.hpp                     (the main function to run demo)}
+\DoxyCodeLine{│   └── CMakeLists.txt}
+\DoxyCodeLine{├── results}
+\DoxyCodeLine{│   ├── gt\_positions.txt             (ground truth trajectory)}
+\DoxyCodeLine{│   ├── trajectory.txt               (trajectory after simple visual odometry)}
+\DoxyCodeLine{│   ├── ba.txt                       (trajectory after bundle adjustment)}
+\DoxyCodeLine{│   └── looped.txt}
+\DoxyCodeLine{├── evaluation}
+\DoxyCodeLine{│   ├── plot.py                      (plot the trajectory)}
+\DoxyCodeLine{│   └── evaluate\_ate.py              (evaluate the result)}
+\DoxyCodeLine{├── CMakeLists.txt}
+\DoxyCodeLine{└── Doxygen File                     (doxygen file of project)}
+\DoxyCodeLine{    ├── html                         (please look at index.html)}
+\DoxyCodeLine{    └── latex}
+\end{DoxyCode}
+\hypertarget{index_autotoc_md7}{}\doxysection{Authors}\label{index_autotoc_md7}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Student ID  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Email   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Student ID  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Email   }\\\cline{1-3}
+\endhead
+Ruiqi L\+IU  &86396172  &\href{mailto:liurq@shanghaitech.edu.cn}{\texttt{ liurq@shanghaitech.\+edu.\+cn}}   \\\cline{1-3}
+Haomin S\+HI  &15852965  &\href{mailto:shihm@shanghaitech.edu.cn}{\texttt{ shihm@shanghaitech.\+edu.\+cn}}   \\\cline{1-3}
+Zilin SI  &50696105  &\href{mailto:sizl@shanghaitech.edu.cn}{\texttt{ sizl@shanghaitech.\+edu.\+cn}}   \\\cline{1-3}
+\end{longtabu}

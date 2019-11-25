@@ -1,0 +1,166 @@
+\hypertarget{struct_snavely_reprojection_error}{}\doxysection{Snavely\+Reprojection\+Error Struct Reference}
+\label{struct_snavely_reprojection_error}\index{SnavelyReprojectionError@{SnavelyReprojectionError}}
+
+
+\mbox{\hyperlink{struct_snavely_reprojection_error}{Snavely\+Reprojection\+Error}} The structure to record the parameters of error in the reprojection process. ~\newline
+  
+
+
+
+
+{\ttfamily \#include $<$B\+A\+\_\+tools.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_snavely_reprojection_error_ad594af8d40b7f585309b27d22ca69c16}{Snavely\+Reprojection\+Error}} (double \mbox{\hyperlink{struct_snavely_reprojection_error_a4a0f819bd13eeac46ab535e066d87372}{observed\+\_\+x}}, double \mbox{\hyperlink{struct_snavely_reprojection_error_a2f78791c15a43c4dc5fda4c7b62623b9}{observed\+\_\+y}})
+\begin{DoxyCompactList}\small\item\em Pass the parameters into the structure. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{struct_snavely_reprojection_error_a004bcf782bb184f9c14ddfe08476e6e1}{operator()}} (const T $\ast$const camera, const T $\ast$const point, const T $\ast$const K, T $\ast$residuals) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static ceres\+::\+Cost\+Function $\ast$ \mbox{\hyperlink{struct_snavely_reprojection_error_a6a7eebb0462d422fd0b5ea4c9ccc2dbe}{Create}} (const double \mbox{\hyperlink{struct_snavely_reprojection_error_a4a0f819bd13eeac46ab535e066d87372}{observed\+\_\+x}}, const double \mbox{\hyperlink{struct_snavely_reprojection_error_a2f78791c15a43c4dc5fda4c7b62623b9}{observed\+\_\+y}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{struct_snavely_reprojection_error_a4a0f819bd13eeac46ab535e066d87372}{observed\+\_\+x}}
+\item 
+double \mbox{\hyperlink{struct_snavely_reprojection_error_a2f78791c15a43c4dc5fda4c7b62623b9}{observed\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_snavely_reprojection_error}{Snavely\+Reprojection\+Error}} The structure to record the parameters of error in the reprojection process. ~\newline
+ 
+
+Definition at line 88 of file B\+A\+\_\+tools.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_snavely_reprojection_error_ad594af8d40b7f585309b27d22ca69c16}\label{struct_snavely_reprojection_error_ad594af8d40b7f585309b27d22ca69c16}} 
+\index{SnavelyReprojectionError@{SnavelyReprojectionError}!SnavelyReprojectionError@{SnavelyReprojectionError}}
+\index{SnavelyReprojectionError@{SnavelyReprojectionError}!SnavelyReprojectionError@{SnavelyReprojectionError}}
+\doxysubsubsection{\texorpdfstring{SnavelyReprojectionError()}{SnavelyReprojectionError()}}
+{\footnotesize\ttfamily Snavely\+Reprojection\+Error\+::\+Snavely\+Reprojection\+Error (\begin{DoxyParamCaption}\item[{double}]{observed\+\_\+x,  }\item[{double}]{observed\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pass the parameters into the structure. 
+
+\mbox{\hyperlink{struct_snavely_reprojection_error_ad594af8d40b7f585309b27d22ca69c16}{Snavely\+Reprojection\+Error()}} The constructor of the structure. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em observed\+\_\+x} & The x-\/axis position of the observation point \\
+\hline
+\mbox{\texttt{ in}}  & {\em observed\+\_\+y} & The y-\/axis position of the observation point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL void output 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file B\+A\+\_\+tools.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_snavely_reprojection_error_ad594af8d40b7f585309b27d22ca69c16_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_snavely_reprojection_error_a6a7eebb0462d422fd0b5ea4c9ccc2dbe}\label{struct_snavely_reprojection_error_a6a7eebb0462d422fd0b5ea4c9ccc2dbe}} 
+\index{SnavelyReprojectionError@{SnavelyReprojectionError}!Create@{Create}}
+\index{Create@{Create}!SnavelyReprojectionError@{SnavelyReprojectionError}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily static ceres\+::\+Cost\+Function$\ast$ Snavely\+Reprojection\+Error\+::\+Create (\begin{DoxyParamCaption}\item[{const double}]{observed\+\_\+x,  }\item[{const double}]{observed\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\hyperlink{struct_snavely_reprojection_error_a6a7eebb0462d422fd0b5ea4c9ccc2dbe}{Create()}} Creating a new autodiffcostfunction for the observed position. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em observed\+\_\+x} & The x-\/axis position of the observation point \\
+\hline
+\mbox{\texttt{ in}}  & {\em observed\+\_\+y} & The y-\/axis position of the observation point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the cost function of specific position . 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file B\+A\+\_\+tools.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_snavely_reprojection_error_a6a7eebb0462d422fd0b5ea4c9ccc2dbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{struct_snavely_reprojection_error_a6a7eebb0462d422fd0b5ea4c9ccc2dbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_snavely_reprojection_error_a004bcf782bb184f9c14ddfe08476e6e1}\label{struct_snavely_reprojection_error_a004bcf782bb184f9c14ddfe08476e6e1}} 
+\index{SnavelyReprojectionError@{SnavelyReprojectionError}!operator()@{operator()}}
+\index{operator()@{operator()}!SnavelyReprojectionError@{SnavelyReprojectionError}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Snavely\+Reprojection\+Error\+::operator() (\begin{DoxyParamCaption}\item[{const T $\ast$const}]{camera,  }\item[{const T $\ast$const}]{point,  }\item[{const T $\ast$const}]{K,  }\item[{T $\ast$}]{residuals }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+operator() Creating a new autodiffcostfunction for the observed position. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em camera} & The position of the camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em point} & The position of the predicted 3D point. \\
+\hline
+\mbox{\texttt{ in}}  & {\em K} & The intrinsic parameter matrix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em residuals} & The error between real point and prediction. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the algorithm runs successfully. 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file B\+A\+\_\+tools.\+hpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_snavely_reprojection_error_a4a0f819bd13eeac46ab535e066d87372}\label{struct_snavely_reprojection_error_a4a0f819bd13eeac46ab535e066d87372}} 
+\index{SnavelyReprojectionError@{SnavelyReprojectionError}!observed\_x@{observed\_x}}
+\index{observed\_x@{observed\_x}!SnavelyReprojectionError@{SnavelyReprojectionError}}
+\doxysubsubsection{\texorpdfstring{observed\_x}{observed\_x}}
+{\footnotesize\ttfamily double Snavely\+Reprojection\+Error\+::observed\+\_\+x}
+
+
+
+Definition at line 144 of file B\+A\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{struct_snavely_reprojection_error_a2f78791c15a43c4dc5fda4c7b62623b9}\label{struct_snavely_reprojection_error_a2f78791c15a43c4dc5fda4c7b62623b9}} 
+\index{SnavelyReprojectionError@{SnavelyReprojectionError}!observed\_y@{observed\_y}}
+\index{observed\_y@{observed\_y}!SnavelyReprojectionError@{SnavelyReprojectionError}}
+\doxysubsubsection{\texorpdfstring{observed\_y}{observed\_y}}
+{\footnotesize\ttfamily double Snavely\+Reprojection\+Error\+::observed\+\_\+y}
+
+
+
+Definition at line 145 of file B\+A\+\_\+tools.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ba/\mbox{\hyperlink{_b_a__tools_8hpp}{B\+A\+\_\+tools.\+hpp}}\end{DoxyCompactItemize}

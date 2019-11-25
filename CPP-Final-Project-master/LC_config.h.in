@@ -1,0 +1,3 @@
+// the configured options and settings to be passed to the code
+#define LOOP_CLOSURE_VERSION_MAJOR @LOOP_CLOSURE_VERSION_MAJOR@
+#define LOOP_CLOSURE_VERSION_MINOR @LOOP_CLOSURE_VERSION_MINOR@

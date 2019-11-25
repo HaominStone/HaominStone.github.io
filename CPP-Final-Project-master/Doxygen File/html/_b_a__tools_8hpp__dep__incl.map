@@ -1,0 +1,6 @@
+<map id="ba/BA_tools.hpp" name="ba/BA_tools.hpp">
+<area shape="rect" id="node1" title="Some tools that will be used in the bundle adjustment." alt="" coords="76,5,195,32"/>
+<area shape="rect" id="node2" href="$_b_a__tools_8cpp.html" title="This file is the main application of some function that BA algorithm may use." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$_v_o__tools_8hpp.html" title="This file is mainly to realize the visual odometer which will be used to judge the error between crit..." alt="" coords="148,80,267,107"/>
+<area shape="rect" id="node4" href="$_v_o__tools_8cpp.html" title="This file is the main application of VO class." alt="" coords="148,155,267,181"/>
+</map>

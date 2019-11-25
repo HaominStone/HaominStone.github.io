@@ -1,0 +1,367 @@
+\hypertarget{class_v_o}{}\doxysection{VO Class Reference}
+\label{class_v_o}\index{VO@{VO}}
+
+
+The main structure for \mbox{\hyperlink{class_v_o}{VO}} algorithm, which contains the parameters we will use in the \mbox{\hyperlink{class_v_o}{VO}} algorithm.  
+
+
+
+
+{\ttfamily \#include $<$V\+O\+\_\+tools.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_v_o_a18fddb425e5772dda1d4ef35893e8780}{VO}} (string data\+\_\+path\+\_\+=\char`\"{}\char`\"{}, string store\+\_\+path\+\_\+=\char`\"{}\char`\"{}, int step\+\_\+size\+\_\+=10)
+\item 
+\mbox{\hyperlink{class_v_o_a28f5c2f811dbaf41109d5faf99fae4bc}{$\sim$\+VO}} ()
+\item 
+void \mbox{\hyperlink{class_v_o_a445ff78d8b9a9a7cbcbcf95880c8c912}{SetK}} (double focal\+\_\+x, double focal\+\_\+y, int principal\+\_\+x, int principal\+\_\+y)
+\item 
+int \mbox{\hyperlink{class_v_o_ac92065e5f107d3ae2f0cad1917f79130}{read\+\_\+file\+\_\+names}} ()
+\item 
+void \mbox{\hyperlink{class_v_o_afa5e79572a91c1f73668740ba1d74078}{solve}} (std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&all\+\_\+R, std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&all\+\_\+t, bool store\+\_\+trajectory=false, bool need\+\_\+plot=false)
+\item 
+void \mbox{\hyperlink{class_v_o_a916db2949378cf12c166d114df9d5ca7}{solve\+\_\+once}} (std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&all\+\_\+R, std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&all\+\_\+t, vector$<$ Eigen\+::\+Vector2f $>$ \&pre\+\_\+all\+\_\+inliers1, vector$<$ Eigen\+::\+Vector2f $>$ \&pre\+\_\+all\+\_\+inliers2, vector$<$ std\+::vector$<$ Eigen\+::\+Vector2f $>$$>$ \&all\+\_\+2d\+\_\+inliers, vector$<$ std\+::map$<$ int, int $>$ $>$ \&all\+\_\+indexes, map$<$ int, vector$<$ Key\+Point $>$$>$ \&index\+\_\+points, map$<$ int, Mat $>$ \&index\+\_\+descriptors, Ptr$<$ Feature2D $>$ \&f2d, int \&index, int files)
+\item 
+void \mbox{\hyperlink{class_v_o_a79d63038005f3affefb487edd1f68f80}{add\+\_\+points}} (vector$<$ Point2d $>$ \&P\+O\+I\+N\+T\+\_\+1, vector$<$ Point2d $>$ \&P\+O\+I\+N\+T\+\_\+2, Eigen\+::\+Vector\+Xi \&mask, std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&all\+\_\+inliers1, std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&all\+\_\+inliers2)
+\item 
+void \mbox{\hyperlink{class_v_o_a96021858ed364a0ff425df079d5b532c}{read\+\_\+gt}} (std\+::string file\+\_\+path)
+\item 
+Eigen\+::\+Vector\+Xd \mbox{\hyperlink{class_v_o_a0e1e113c7768b0f5e83b112f17e8d7d3}{get\+\_\+\+K\+\_\+}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_v_o_a28ccd56e2166264bef2209491105fc7c}{step\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em The step size for take critical frames. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_v_o_a0a5c356a7e8f669d7b9f88affb7a2626}{store\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em The path to save the final result. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_v_o_ad4549849bfb7c9e80c48c1ee7f384080}{data\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em The path we get data from. \end{DoxyCompactList}\item 
+Mat \mbox{\hyperlink{class_v_o_aefaa22273043dec827cc5e79b5c40a8d}{K}}
+\begin{DoxyCompactList}\small\item\em The internal parameter matrix. \end{DoxyCompactList}\item 
+Eigen\+::\+Vector\+Xd \mbox{\hyperlink{class_v_o_a5c04c6848443a1bc6f34aa9b228b7b39}{K\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The eigen form of internal parameter matrix k. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_v_o_ad4ac7a2522b5b2c28ca72e7a00d56470}{vector\+\_\+of\+\_\+files}}
+\begin{DoxyCompactList}\small\item\em The parameter waiting to be used. \end{DoxyCompactList}\item 
+vector$<$ Mat $>$ \mbox{\hyperlink{class_v_o_a4e47f91c82853cfd7684e2c50b79bb9b}{Ps}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main structure for \mbox{\hyperlink{class_v_o}{VO}} algorithm, which contains the parameters we will use in the \mbox{\hyperlink{class_v_o}{VO}} algorithm. 
+
+Definition at line 24 of file V\+O\+\_\+tools.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_v_o_a18fddb425e5772dda1d4ef35893e8780}\label{class_v_o_a18fddb425e5772dda1d4ef35893e8780}} 
+\index{VO@{VO}!VO@{VO}}
+\index{VO@{VO}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{VO()}{VO()}}
+{\footnotesize\ttfamily V\+O\+::\+VO (\begin{DoxyParamCaption}\item[{string}]{data\+\_\+path\+\_\+ = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{store\+\_\+path\+\_\+ = {\ttfamily \char`\"{}\char`\"{}},  }\item[{int}]{step\+\_\+size\+\_\+ = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a18fddb425e5772dda1d4ef35893e8780}{V\+O()}} The constuctor of class \mbox{\hyperlink{class_v_o}{VO}}. \mbox{\hyperlink{class_v_o_a18fddb425e5772dda1d4ef35893e8780}{V\+O()}} Pass store\+\_\+path\+\_\+, data\+\_\+path\+\_\+, step\+\_\+size\+\_\+ to the corresponding private parameter. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em store\+\_\+path\+\_\+} & The value to be pass to store\+\_\+path \\
+\hline
+\mbox{\texttt{ in}}  & {\em data\+\_\+path\+\_\+} & The value to be pass to data\+\_\+path \\
+\hline
+\mbox{\texttt{ in}}  & {\em step\+\_\+size\+\_\+} & The value to be pass to step\+\_\+size \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file V\+O\+\_\+tools.\+cpp.
+
+\mbox{\Hypertarget{class_v_o_a28f5c2f811dbaf41109d5faf99fae4bc}\label{class_v_o_a28f5c2f811dbaf41109d5faf99fae4bc}} 
+\index{VO@{VO}!````~VO@{$\sim$VO}}
+\index{````~VO@{$\sim$VO}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{$\sim$VO()}{~VO()}}
+{\footnotesize\ttfamily V\+O\+::$\sim$\+VO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a28f5c2f811dbaf41109d5faf99fae4bc}{$\sim$\+V\+O()}} The destuctor of class \mbox{\hyperlink{class_v_o}{VO}}. 
+
+Definition at line 335 of file V\+O\+\_\+tools.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_o_a79d63038005f3affefb487edd1f68f80}\label{class_v_o_a79d63038005f3affefb487edd1f68f80}} 
+\index{VO@{VO}!add\_points@{add\_points}}
+\index{add\_points@{add\_points}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{add\_points()}{add\_points()}}
+{\footnotesize\ttfamily void V\+O\+::add\+\_\+points (\begin{DoxyParamCaption}\item[{vector$<$ Point2d $>$ \&}]{P\+O\+I\+N\+T\+\_\+1,  }\item[{vector$<$ Point2d $>$ \&}]{P\+O\+I\+N\+T\+\_\+2,  }\item[{Eigen\+::\+Vector\+Xi \&}]{mask,  }\item[{std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&}]{all\+\_\+inliers1,  }\item[{std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&}]{all\+\_\+inliers2 }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a79d63038005f3affefb487edd1f68f80}{add\+\_\+points()}} Be used to add new point into corresponding inlier vectors. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em P\+O\+I\+N\+T\+\_\+1} & The inlier which waiting to push into inlier vector as the first frame. \\
+\hline
+\mbox{\texttt{ in}}  & {\em P\+O\+I\+N\+T\+\_\+2} & The inlier which waiting to push into inlier vector as the second frame. \\
+\hline
+\mbox{\texttt{ in}}  & {\em mask} & The indicator to determine whether the point should be added. \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+inliers1} & The vector which contains all inliers of the first frame. \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+inliers2} & The vector which contains all inliers of the second frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file V\+O\+\_\+tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_v_o_a79d63038005f3affefb487edd1f68f80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_v_o_a0e1e113c7768b0f5e83b112f17e8d7d3}\label{class_v_o_a0e1e113c7768b0f5e83b112f17e8d7d3}} 
+\index{VO@{VO}!get\_K\_@{get\_K\_}}
+\index{get\_K\_@{get\_K\_}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{get\_K\_()}{get\_K\_()}}
+{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd V\+O\+::get\+\_\+\+K\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a0e1e113c7768b0f5e83b112f17e8d7d3}{get\+\_\+\+K\+\_\+()}} Get the K of the class. \begin{DoxyReturn}{Returns}
+The private parameter K 
+\end{DoxyReturn}
+
+
+Definition at line 263 of file V\+O\+\_\+tools.\+cpp.
+
+\mbox{\Hypertarget{class_v_o_ac92065e5f107d3ae2f0cad1917f79130}\label{class_v_o_ac92065e5f107d3ae2f0cad1917f79130}} 
+\index{VO@{VO}!read\_file\_names@{read\_file\_names}}
+\index{read\_file\_names@{read\_file\_names}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{read\_file\_names()}{read\_file\_names()}}
+{\footnotesize\ttfamily int V\+O\+::read\+\_\+file\+\_\+names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_ac92065e5f107d3ae2f0cad1917f79130}{read\+\_\+file\+\_\+names()}} This function is used to extract the names of files in a specific directory. the internal parameter matrix k will need and send it to k. \begin{DoxyReturn}{Returns}
+Return the number of file in this directory. 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file V\+O\+\_\+tools.\+cpp.
+
+\mbox{\Hypertarget{class_v_o_a96021858ed364a0ff425df079d5b532c}\label{class_v_o_a96021858ed364a0ff425df079d5b532c}} 
+\index{VO@{VO}!read\_gt@{read\_gt}}
+\index{read\_gt@{read\_gt}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{read\_gt()}{read\_gt()}}
+{\footnotesize\ttfamily void V\+O\+::read\+\_\+gt (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a96021858ed364a0ff425df079d5b532c}{read\+\_\+gt()}} This function reads the ground truth from specific file. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 268 of file V\+O\+\_\+tools.\+cpp.
+
+\mbox{\Hypertarget{class_v_o_a445ff78d8b9a9a7cbcbcf95880c8c912}\label{class_v_o_a445ff78d8b9a9a7cbcbcf95880c8c912}} 
+\index{VO@{VO}!SetK@{SetK}}
+\index{SetK@{SetK}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{SetK()}{SetK()}}
+{\footnotesize\ttfamily void V\+O\+::\+SetK (\begin{DoxyParamCaption}\item[{double}]{focal\+\_\+x,  }\item[{double}]{focal\+\_\+y,  }\item[{int}]{principal\+\_\+x,  }\item[{int}]{principal\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a445ff78d8b9a9a7cbcbcf95880c8c912}{Set\+K()}} This function which is used to pass the parameters in to the internal parameter matrix. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em focal\+\_\+x} & The position of focal on x-\/axis. \\
+\hline
+\mbox{\texttt{ in}}  & {\em focal\+\_\+y} & The position of focal on y-\/axis. \\
+\hline
+\mbox{\texttt{ in}}  & {\em principal\+\_\+x} & The position of camera center on x-\/axis. \\
+\hline
+\mbox{\texttt{ in}}  & {\em principal\+\_\+y} & The position of camera center on y-\/axis. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & void output \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 14 of file V\+O\+\_\+tools.\+cpp.
+
+\mbox{\Hypertarget{class_v_o_afa5e79572a91c1f73668740ba1d74078}\label{class_v_o_afa5e79572a91c1f73668740ba1d74078}} 
+\index{VO@{VO}!solve@{solve}}
+\index{solve@{solve}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void V\+O\+::solve (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&}]{all\+\_\+R,  }\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{all\+\_\+t,  }\item[{bool}]{store\+\_\+trajectory = {\ttfamily false},  }\item[{bool}]{need\+\_\+plot = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_afa5e79572a91c1f73668740ba1d74078}{solve()}} The main structure of \mbox{\hyperlink{class_v_o}{VO}} algorithm. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em store\+\_\+trajectory} & Whether we need to store the trajectory parameters into a specific file \\
+\hline
+\mbox{\texttt{ in}}  & {\em need\+\_\+plot} & Whether we need to plot the result \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+R} & The vector which contains the rotation information between two step \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+t} & The vector which contains the translation information between two step \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & Algorithm runs successfully \\
+\hline
+{\em 0} & Fails \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 48 of file V\+O\+\_\+tools.\+cpp.
+
+\mbox{\Hypertarget{class_v_o_a916db2949378cf12c166d114df9d5ca7}\label{class_v_o_a916db2949378cf12c166d114df9d5ca7}} 
+\index{VO@{VO}!solve\_once@{solve\_once}}
+\index{solve\_once@{solve\_once}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{solve\_once()}{solve\_once()}}
+{\footnotesize\ttfamily void V\+O\+::solve\+\_\+once (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&}]{all\+\_\+R,  }\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{all\+\_\+t,  }\item[{vector$<$ Eigen\+::\+Vector2f $>$ \&}]{pre\+\_\+all\+\_\+inliers1,  }\item[{vector$<$ Eigen\+::\+Vector2f $>$ \&}]{pre\+\_\+all\+\_\+inliers2,  }\item[{vector$<$ std\+::vector$<$ Eigen\+::\+Vector2f $>$$>$ \&}]{all\+\_\+2d\+\_\+inliers,  }\item[{vector$<$ std\+::map$<$ int, int $>$ $>$ \&}]{all\+\_\+indexes,  }\item[{map$<$ int, vector$<$ Key\+Point $>$$>$ \&}]{index\+\_\+points,  }\item[{map$<$ int, Mat $>$ \&}]{index\+\_\+descriptors,  }\item[{Ptr$<$ Feature2D $>$ \&}]{f2d,  }\item[{int \&}]{index,  }\item[{int}]{files }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_v_o_a916db2949378cf12c166d114df9d5ca7}{solve\+\_\+once()}} Runs the vo algorithm once. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em all\+\_\+R} & The vector which contains the rotation information between two step \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+t} & The vector which contains the translation information between two step \\
+\hline
+\mbox{\texttt{ in}}  & {\em pre\+\_\+all\+\_\+inliers1} & The vector which contains previous all inliers of the first frame. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pre\+\_\+all\+\_\+inliers2} & The vector which contains previous all inliers of the second frame.\\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+2d\+\_\+inliers} & The inliers waiting to be stored. \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+indexes} & The mapping between all the matched frames. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index\+\_\+points} & T\+He mapping between keypoint and its corresponing index. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index\+\_\+descriptors} & The mapping between the index and their corresponding feature descriptors. \\
+\hline
+\mbox{\texttt{ in}}  & {\em f2d} & The S\+I\+FT feature extractor. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & The index of the frame that will be process in the solve percedure. \\
+\hline
+\mbox{\texttt{ in}}  & {\em files} & The index of file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file V\+O\+\_\+tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_v_o_a916db2949378cf12c166d114df9d5ca7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_v_o_ad4549849bfb7c9e80c48c1ee7f384080}\label{class_v_o_ad4549849bfb7c9e80c48c1ee7f384080}} 
+\index{VO@{VO}!data\_path@{data\_path}}
+\index{data\_path@{data\_path}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{data\_path}{data\_path}}
+{\footnotesize\ttfamily string V\+O\+::data\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The path we get data from. 
+
+
+
+Definition at line 40 of file V\+O\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{class_v_o_aefaa22273043dec827cc5e79b5c40a8d}\label{class_v_o_aefaa22273043dec827cc5e79b5c40a8d}} 
+\index{VO@{VO}!K@{K}}
+\index{K@{K}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily Mat V\+O\+::K\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The internal parameter matrix. 
+
+
+
+Definition at line 45 of file V\+O\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{class_v_o_a5c04c6848443a1bc6f34aa9b228b7b39}\label{class_v_o_a5c04c6848443a1bc6f34aa9b228b7b39}} 
+\index{VO@{VO}!K\_@{K\_}}
+\index{K\_@{K\_}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{K\_}{K\_}}
+{\footnotesize\ttfamily Eigen\+::\+Vector\+Xd V\+O\+::\+K\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The eigen form of internal parameter matrix k. 
+
+
+
+Definition at line 50 of file V\+O\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{class_v_o_a4e47f91c82853cfd7684e2c50b79bb9b}\label{class_v_o_a4e47f91c82853cfd7684e2c50b79bb9b}} 
+\index{VO@{VO}!Ps@{Ps}}
+\index{Ps@{Ps}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{Ps}{Ps}}
+{\footnotesize\ttfamily vector$<$Mat$>$ V\+O\+::\+Ps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 57 of file V\+O\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{class_v_o_a28ccd56e2166264bef2209491105fc7c}\label{class_v_o_a28ccd56e2166264bef2209491105fc7c}} 
+\index{VO@{VO}!step\_size@{step\_size}}
+\index{step\_size@{step\_size}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{step\_size}{step\_size}}
+{\footnotesize\ttfamily int V\+O\+::step\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The step size for take critical frames. 
+
+
+
+Definition at line 30 of file V\+O\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{class_v_o_a0a5c356a7e8f669d7b9f88affb7a2626}\label{class_v_o_a0a5c356a7e8f669d7b9f88affb7a2626}} 
+\index{VO@{VO}!store\_path@{store\_path}}
+\index{store\_path@{store\_path}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{store\_path}{store\_path}}
+{\footnotesize\ttfamily string V\+O\+::store\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The path to save the final result. 
+
+
+
+Definition at line 35 of file V\+O\+\_\+tools.\+hpp.
+
+\mbox{\Hypertarget{class_v_o_ad4ac7a2522b5b2c28ca72e7a00d56470}\label{class_v_o_ad4ac7a2522b5b2c28ca72e7a00d56470}} 
+\index{VO@{VO}!vector\_of\_files@{vector\_of\_files}}
+\index{vector\_of\_files@{vector\_of\_files}!VO@{VO}}
+\doxysubsubsection{\texorpdfstring{vector\_of\_files}{vector\_of\_files}}
+{\footnotesize\ttfamily vector$<$string$>$ V\+O\+::vector\+\_\+of\+\_\+files\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The parameter waiting to be used. 
+
+
+
+Definition at line 55 of file V\+O\+\_\+tools.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vo/\mbox{\hyperlink{_v_o__tools_8hpp}{V\+O\+\_\+tools.\+hpp}}\item 
+vo/\mbox{\hyperlink{_v_o__tools_8cpp}{V\+O\+\_\+tools.\+cpp}}\end{DoxyCompactItemize}

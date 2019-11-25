@@ -1,0 +1,121 @@
+\hypertarget{_l_c__tools_8hpp}{}\doxysection{loop\+\_\+closure/\+L\+C\+\_\+tools.hpp File Reference}
+\label{_l_c__tools_8hpp}\index{loop\_closure/LC\_tools.hpp@{loop\_closure/LC\_tools.hpp}}
+
+
+This file is the handy functions for LC.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$opencv2/xfeatures2d.\+hpp$>$}\newline
+{\ttfamily \#include $<$eigen3/\+Eigen/\+Eigenvalues$>$}\newline
+{\ttfamily \#include $<$gtsam/geometry/\+Point3.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/inference/\+Key.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/slam/\+Prior\+Factor.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/slam/\+Between\+Factor.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/nonlinear/\+Nonlinear\+Factor\+Graph.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/nonlinear/\+Gauss\+Newton\+Optimizer.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/nonlinear/\+Marginals.\+h$>$}\newline
+{\ttfamily \#include $<$gtsam/nonlinear/\+Values.\+h$>$}\newline
+Include dependency graph for L\+C\+\_\+tools.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_l_c__tools_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{_l_c__tools_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_l_c__tools_8hpp_a5b02bc5a16c93212d42dc80416831fb8}{dissimilar}} (Mat \&first, Mat \&second)
+\item 
+int \mbox{\hyperlink{_l_c__tools_8hpp_a7a25d7d738e904c19ccc1423ae6107b3}{find\+\_\+loop}} (std\+::map$<$ int, Mat $>$ \&index\+\_\+features)
+\item 
+void \mbox{\hyperlink{_l_c__tools_8hpp_a4323602bfed646e7c9e08bb2421e5b31}{geometric\+\_\+verification}} (Mat R\+\_\+loop, Mat t\+\_\+loop, Eigen\+::\+Vector\+Xd K, std\+::map$<$ int, std\+::vector$<$ Key\+Point $>$$>$ index\+\_\+points, std\+::map$<$ int, Mat $>$ index\+\_\+descriptors, int index\+\_\+first, int index\+\_\+second)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is the handy functions for LC. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_l_c__tools_8hpp_a5b02bc5a16c93212d42dc80416831fb8}\label{_l_c__tools_8hpp_a5b02bc5a16c93212d42dc80416831fb8}} 
+\index{LC\_tools.hpp@{LC\_tools.hpp}!dissimilar@{dissimilar}}
+\index{dissimilar@{dissimilar}!LC\_tools.hpp@{LC\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{dissimilar()}{dissimilar()}}
+{\footnotesize\ttfamily float dissimilar (\begin{DoxyParamCaption}\item[{Mat \&}]{first,  }\item[{Mat \&}]{second }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_l_c__tools_8hpp_a5b02bc5a16c93212d42dc80416831fb8}{dissimilar()}} Output the qualtified dissimilarity between to input matrix. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em first} & The first input matrix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em second} & The second input matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return The number indicates the qualtified dissimilarity. 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file L\+C\+\_\+tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{_l_c__tools_8hpp_a5b02bc5a16c93212d42dc80416831fb8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_l_c__tools_8hpp_a7a25d7d738e904c19ccc1423ae6107b3}\label{_l_c__tools_8hpp_a7a25d7d738e904c19ccc1423ae6107b3}} 
+\index{LC\_tools.hpp@{LC\_tools.hpp}!find\_loop@{find\_loop}}
+\index{find\_loop@{find\_loop}!LC\_tools.hpp@{LC\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{find\_loop()}{find\_loop()}}
+{\footnotesize\ttfamily int find\+\_\+loop (\begin{DoxyParamCaption}\item[{std\+::map$<$ int, Mat $>$ \&}]{index\+\_\+features }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_l_c__tools_8hpp_a7a25d7d738e904c19ccc1423ae6107b3}{find\+\_\+loop()}} Detecting which position in the index vector which indicates a loop has finished. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index\+\_\+features} & The feature matrix and its corresponding index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return The index indicates the end of a loop. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_l_c__tools_8hpp_a4323602bfed646e7c9e08bb2421e5b31}\label{_l_c__tools_8hpp_a4323602bfed646e7c9e08bb2421e5b31}} 
+\index{LC\_tools.hpp@{LC\_tools.hpp}!geometric\_verification@{geometric\_verification}}
+\index{geometric\_verification@{geometric\_verification}!LC\_tools.hpp@{LC\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{geometric\_verification()}{geometric\_verification()}}
+{\footnotesize\ttfamily void geometric\+\_\+verification (\begin{DoxyParamCaption}\item[{Mat}]{R\+\_\+loop,  }\item[{Mat}]{t\+\_\+loop,  }\item[{Eigen\+::\+Vector\+Xd}]{K,  }\item[{std\+::map$<$ int, std\+::vector$<$ Key\+Point $>$$>$}]{index\+\_\+points,  }\item[{std\+::map$<$ int, Mat $>$}]{index\+\_\+descriptors,  }\item[{int}]{index\+\_\+first,  }\item[{int}]{index\+\_\+second }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_l_c__tools_8hpp_a4323602bfed646e7c9e08bb2421e5b31}{geometric\+\_\+verification()}} Align the two frame given be their index. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em R\+\_\+loop} & The rotation matrix between them. \\
+\hline
+\mbox{\texttt{ in}}  & {\em t\+\_\+loop} & The translation matrix between them. \\
+\hline
+\mbox{\texttt{ in}}  & {\em K} & The intrinsic parameter matrix. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index\+\_\+points} & All the feature point with their indexs. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index\+\_\+descriptors} & All the feature descriptors with their index. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index\+\_\+first} & The index of the first frame. \\
+\hline
+\mbox{\texttt{ in}}  & {\em index\+\_\+second} & The index of the second frame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return The index indicates the end of a loop. 
+\end{DoxyReturn}

@@ -1,0 +1,207 @@
+\hypertarget{_b_a__tools_8hpp}{}\doxysection{ba/\+B\+A\+\_\+tools.hpp File Reference}
+\label{_b_a__tools_8hpp}\index{ba/BA\_tools.hpp@{ba/BA\_tools.hpp}}
+
+
+Some tools that will be used in the bundle adjustment.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$cfloat$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$eigen3/\+Eigen/\+Eigen$>$}\newline
+{\ttfamily \#include $<$eigen3/\+Eigen/\+Dense$>$}\newline
+{\ttfamily \#include $<$eigen3/\+Eigen/\+S\+VD$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$ceres/ceres.\+h$>$}\newline
+{\ttfamily \#include $<$ceres/rotation.\+h$>$}\newline
+Include dependency graph for B\+A\+\_\+tools.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_b_a__tools_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{_b_a__tools_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_snavely_reprojection_error}{Snavely\+Reprojection\+Error}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_snavely_reprojection_error}{Snavely\+Reprojection\+Error}} The structure to record the parameters of error in the reprojection process. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_b_a__tools_8hpp_aa125c63b9737d6abcdd523b80b38ce33}{get\+\_\+world\+\_\+point}} (Eigen\+::\+Vector2f point1, Eigen\+::\+Vector2f point2, Eigen\+::\+Matrix\+Xf P1, Eigen\+::\+Matrix\+Xf P2, Eigen\+::\+Vector\+Xf \&X)
+\item 
+void \mbox{\hyperlink{_b_a__tools_8hpp_afa8834d7a9105c501066d29b316bc75c}{find\+\_\+corrospondence}} (std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&pre\+\_\+all\+\_\+inliers1, std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&pre\+\_\+all\+\_\+inliers2, std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&all\+\_\+inliers1, std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&all\+\_\+inliers2, std\+::map$<$ int, int $>$ \&indexes\+\_\+a)
+\item 
+void \mbox{\hyperlink{_b_a__tools_8hpp_a6d8c7b2ada8196bf69ff05b4d271fad7}{get\+\_\+all\+\_\+3d\+\_\+landmarks}} (std\+::vector$<$ std\+::vector$<$ Eigen\+::\+Vector2f $>$ $>$ \&all\+\_\+2d\+\_\+inliers, std\+::vector$<$ std\+::map$<$ int, int $>$ $>$ \&all\+\_\+indexes, std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&all\+\_\+3d\+\_\+points, std\+::map$<$ int, std\+::vector$<$ Eigen\+::\+Vector2f $>$ $>$ \&all\+\_\+frames, std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&all\+\_\+R, std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&all\+\_\+t)
+\item 
+void \mbox{\hyperlink{_b_a__tools_8hpp_ac53231537856e689613f593e945a2602}{optimization}} (std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&all\+\_\+3d\+\_\+points, std\+::map$<$ int, std\+::vector$<$ Eigen\+::\+Vector2f $>$ $>$ \&all\+\_\+frames, std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&all\+\_\+R, std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&all\+\_\+t, std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&after\+\_\+R, std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&after\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Some tools that will be used in the bundle adjustment. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_b_a__tools_8hpp_afa8834d7a9105c501066d29b316bc75c}\label{_b_a__tools_8hpp_afa8834d7a9105c501066d29b316bc75c}} 
+\index{BA\_tools.hpp@{BA\_tools.hpp}!find\_corrospondence@{find\_corrospondence}}
+\index{find\_corrospondence@{find\_corrospondence}!BA\_tools.hpp@{BA\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{find\_corrospondence()}{find\_corrospondence()}}
+{\footnotesize\ttfamily void find\+\_\+corrospondence (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&}]{pre\+\_\+all\+\_\+inliers1,  }\item[{std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&}]{pre\+\_\+all\+\_\+inliers2,  }\item[{std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&}]{all\+\_\+inliers1,  }\item[{std\+::vector$<$ Eigen\+::\+Vector2f $>$ \&}]{all\+\_\+inliers2,  }\item[{std\+::map$<$ int, int $>$ \&}]{indexes\+\_\+a }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_b_a__tools_8hpp_afa8834d7a9105c501066d29b316bc75c}{find\+\_\+corrospondence()}} Be used to find the corresponding inliner point in pre-\/found inlier and new ones. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pre\+\_\+all\+\_\+inliers1} & The matrix which contains pre-\/found inliers of first camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em pre\+\_\+all\+\_\+inliers2} & The matrix which contains pre-\/found inliers of second camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+inliers1} & The new inliers matrix of first camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+inliers2} & The new inliers matrix of second camera. \\
+\hline
+\mbox{\texttt{ in}}  & {\em indexes\+\_\+a} & The map which is used to record the mapping between two matrixs\textquotesingle{} element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL void output 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file B\+A\+\_\+tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{_b_a__tools_8hpp_afa8834d7a9105c501066d29b316bc75c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_b_a__tools_8hpp_a6d8c7b2ada8196bf69ff05b4d271fad7}\label{_b_a__tools_8hpp_a6d8c7b2ada8196bf69ff05b4d271fad7}} 
+\index{BA\_tools.hpp@{BA\_tools.hpp}!get\_all\_3d\_landmarks@{get\_all\_3d\_landmarks}}
+\index{get\_all\_3d\_landmarks@{get\_all\_3d\_landmarks}!BA\_tools.hpp@{BA\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_all\_3d\_landmarks()}{get\_all\_3d\_landmarks()}}
+{\footnotesize\ttfamily void get\+\_\+all\+\_\+3d\+\_\+landmarks (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::vector$<$ Eigen\+::\+Vector2f $>$ $>$ \&}]{all\+\_\+2d\+\_\+inliers,  }\item[{std\+::vector$<$ std\+::map$<$ int, int $>$ $>$ \&}]{all\+\_\+indexes,  }\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{all\+\_\+3d\+\_\+points,  }\item[{std\+::map$<$ int, std\+::vector$<$ Eigen\+::\+Vector2f $>$ $>$ \&}]{all\+\_\+frames,  }\item[{std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&}]{all\+\_\+R,  }\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{all\+\_\+t }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_b_a__tools_8hpp_a6d8c7b2ada8196bf69ff05b4d271fad7}{get\+\_\+all\+\_\+3d\+\_\+landmarks()}} The function uses known rotation and transition matrix also the 2d position of landmark to derive the 3d position of landmarks. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em all\+\_\+2d\+\_\+inliers} & The position of all the inlier point of landmarks \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+indexes} & The map imply the mapping between corresponding index in preinlier and new ones \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+3d\+\_\+points} & The vector of all the 3D point we derive \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+frames} & All the frames and its corresponding index \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+R} & The rotation matrix between each two frame \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+t} & The transition matrix of between each two frame \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL void output 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file B\+A\+\_\+tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_b_a__tools_8hpp_a6d8c7b2ada8196bf69ff05b4d271fad7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_b_a__tools_8hpp_aa125c63b9737d6abcdd523b80b38ce33}\label{_b_a__tools_8hpp_aa125c63b9737d6abcdd523b80b38ce33}} 
+\index{BA\_tools.hpp@{BA\_tools.hpp}!get\_world\_point@{get\_world\_point}}
+\index{get\_world\_point@{get\_world\_point}!BA\_tools.hpp@{BA\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_world\_point()}{get\_world\_point()}}
+{\footnotesize\ttfamily void get\+\_\+world\+\_\+point (\begin{DoxyParamCaption}\item[{Eigen\+::\+Vector2f}]{point1,  }\item[{Eigen\+::\+Vector2f}]{point2,  }\item[{Eigen\+::\+Matrix\+Xf}]{P1,  }\item[{Eigen\+::\+Matrix\+Xf}]{P2,  }\item[{Eigen\+::\+Vector\+Xf \&}]{X }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_b_a__tools_8hpp_aa125c63b9737d6abcdd523b80b38ce33}{get\+\_\+world\+\_\+point()}} Get the predicted position of the 3d point
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em point1} & The position of the first object point \\
+\hline
+\mbox{\texttt{ in}}  & {\em point2} & The position of the second object point \\
+\hline
+\mbox{\texttt{ in}}  & {\em P1} & The external parameter of the first camera \\
+\hline
+\mbox{\texttt{ in}}  & {\em P2} & The external parameter of the second camera \\
+\hline
+\mbox{\texttt{ out}}  & {\em X} & The predicted position of the 3d point \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & void output \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 9 of file B\+A\+\_\+tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{_b_a__tools_8hpp_aa125c63b9737d6abcdd523b80b38ce33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_b_a__tools_8hpp_ac53231537856e689613f593e945a2602}\label{_b_a__tools_8hpp_ac53231537856e689613f593e945a2602}} 
+\index{BA\_tools.hpp@{BA\_tools.hpp}!optimization@{optimization}}
+\index{optimization@{optimization}!BA\_tools.hpp@{BA\_tools.hpp}}
+\doxysubsubsection{\texorpdfstring{optimization()}{optimization()}}
+{\footnotesize\ttfamily void optimization (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{all\+\_\+3d\+\_\+points,  }\item[{std\+::map$<$ int, std\+::vector$<$ Eigen\+::\+Vector2f $>$ $>$ \&}]{all\+\_\+frames,  }\item[{std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&}]{all\+\_\+R,  }\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{all\+\_\+t,  }\item[{std\+::vector$<$ Eigen\+::\+Matrix3f $>$ \&}]{after\+\_\+R,  }\item[{std\+::vector$<$ Eigen\+::\+Vector3f $>$ \&}]{after\+\_\+t }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{_b_a__tools_8hpp_ac53231537856e689613f593e945a2602}{optimization()}} The main part of bundle adjustment which use ceres to realize.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em all\+\_\+3d\+\_\+points} & The vector of all the 3D point we derive \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+frames} & All the frames and its corresponding index \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+R} & The rotation matrix between each two frame \\
+\hline
+\mbox{\texttt{ in}}  & {\em all\+\_\+t} & The transition matrix of between each two frame \\
+\hline
+\mbox{\texttt{ in}}  & {\em after\+\_\+R} & The rotation matrix after optimization \\
+\hline
+\mbox{\texttt{ in}}  & {\em after\+\_\+t} & The transition matrix after optimization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL void output 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file B\+A\+\_\+tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_b_a__tools_8hpp_ac53231537856e689613f593e945a2602_cgraph}
+\end{center}
+\end{figure}
