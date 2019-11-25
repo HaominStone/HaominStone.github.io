@@ -11,30 +11,21 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
+* B.S. in ShanghaiTech University, 2020(expected)
+* Summer Exchange Program in University of California, Berkeley 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2019: Intern in Stereye .Inc
+  * Start up company by students in ShanghaiTech 
+  * Duties included: SLAM algorithm development, 3D reconstruction, hardware development
+  * Involved in 5 projects in 6 months
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming Language**: C/C++, Python, Java, OpenGL/WebGL, MATLAB, Rust
+* **Operating Systems:** Unix/Linux, Windows, CentOS, PintOS
+* **Miscellaneous:** ROS, git, Arduino, OpenCV, CMake, PCL, Ceres, GTSAM
 
 Publications
 ======
@@ -42,18 +33,20 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
+Course projects
+=====
+  <ul>{% for post in site.courses %}
+    {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Teaching
+
+
+Reasearch Experience
 ======
-  <ul>{% for post in site.teaching %}
+  <ul>{% for post in site.research %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* [International Summer Camp Volunteer in ShanghaiTech University, summer 2019](/summer_camp/)
+* Leader of the Social Practice Group ShanghaiTech University, summer 2017

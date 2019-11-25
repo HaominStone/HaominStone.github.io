@@ -12,16 +12,17 @@ A ship in harbor is safe, but that's not what ships are built for.
 
 Hi, it's Haomin Stone
 =====
-I am a currently a senior student at [Shanghaitech University](http://www.shanghaitech.edu.cn/eng/). I am enrolled in the [School of Infomation Science and Technology](http://sist.shanghaitech.edu.cn/sist_en/), and major in Computer Science. I love playing soccer. Usually playing in Left Back or Center Back. My best score was the third price in Shanghaitech Baoguo Cup, and scored by heading in the [third place match](https://www.bilibili.com/video/av27530385?p=2). My favorite game is League of Legends, and I play JUNGLE and SUPPORT most of the time. My favorite book is Le Petit Prince(The Little Prince), and my favorite movie is Catch Me If You Can, though there are a great many movies I love too.
+I am a currently a senior student at [ShanghaiTech University](http://www.shanghaitech.edu.cn/eng/). I am enrolled in the [School of Infomation Science and Technology](http://sist.shanghaitech.edu.cn/sist_en/), and major in Computer Science. I love playing soccer. Usually playing in Left Back or Center Back. My best score was the third price in ShanghaiTech Baoguo Cup, and scored by heading in the [third place match](https://www.bilibili.com/video/av27530385?p=2). My favorite game is League of Legends, and I play JUNGLE and SUPPORT most of the time. My favorite book is Le Petit Prince(The Little Prince), and my favorite movie is Catch Me If You Can, though there are a great many movies I love too.
 
 Course Overview
 =====
-Shanghaitech is a new univeristy in Shanghai, the courses are mainly project-based and were heavy in work-load. Photos of most course projects are kept and if you are interested, take a look in the [course section](/course/)
+ShanghaiTech is a new univeristy in Shanghai, the courses are mainly project-based and were heavy in work-load. Photos of most course projects are kept and if you are interested, take a look in the [course section](/course/)
 
 
 Research Overview
 =====
 I have been working in [The ShanghaiTech Multi-Agent systems Research Team (SMART)](http://dengji-zhao.net/smart/index.html)  supervised by Prof. Dengji Zhao. I have joined [Mobile Perception Lab(MPL)](http://mpl.sist.shanghaitech.edu.cn/MPL@shanghaitech.html) supervised by Prof. Laurent Kneip. My research interest is in Simultaneous Localization and Mapping(SLAM), Computer Vision, Robot Perception and Multi-agent Collaboration Strategies. I believe that the Multi-agents' collaboration strategies can be used on the future autonomous driving where each intelligent vehicle need to learn to cooperate under unexpected situations. The detail will be listed in [researches](/research/)
+
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
