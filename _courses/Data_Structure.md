@@ -6,6 +6,7 @@ venue: "ShanghaiTech University"
 date: 2018-06-30
 location: "Shanghai, China"
 ---
+DiDi data analysis and Taxi prediction
 
 <object data="http://haominstone.com/DSproj.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="http://haominstone.com/DSproj.pdf">
