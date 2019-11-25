@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "HaominStone"
 title_separator          : "-"
 name                     : &name "Haomin Shi"
-description              : &description "Undergraduate at Shanghaitech University"
+description              : &description "Undergraduate at ShanghaiTech University"
 url                      : https://HaominStone.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HaominStone/HaominStone.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Haomin Shi"
   avatar           : "profile.png"
-  bio              : "Undergrad student at Shanghaitech University"
+  bio              : "Undergrad student at ShanghaiTech University"
   location         : "Shanghai"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

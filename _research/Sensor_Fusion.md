@@ -2,7 +2,7 @@
 title: "UWB-IMU-LIDAR Localization"
 collection: research
 permalink: /research/Sensor_Fusion
-venue: "Shanghaitech University, Mobile Perception Lab"
+venue: "ShanghaiTech University, Mobile Perception Lab"
 date: 2018-05-10
 location: "Shanghai, China"
 ---

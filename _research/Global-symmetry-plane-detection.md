@@ -2,7 +2,7 @@
 title: "Global symmetry plane detection"
 collection: research
 permalink: /research/Global-symmetry-plane-detection
-venue: "Shanghaitech University, Mobile Perception Lab"
+venue: "ShanghaiTech University, Mobile Perception Lab"
 date: 2019-08-10
 location: "Shanghai, China"
 ---

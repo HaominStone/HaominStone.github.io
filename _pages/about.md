@@ -12,11 +12,11 @@ A ship in harbor is safe, but that's not what ships are built for.
 
 Hi, it's Haomin Stone
 =====
-I am a currently a senior student at [Shanghaitech University](http://www.shanghaitech.edu.cn/eng/). I am enrolled in the [School of Infomation Science and Technology](http://sist.shanghaitech.edu.cn/sist_en/), and major in Computer Science. I love playing soccer. Usually playing in Left Back or Center Back. My best score was the third price in Shanghaitech Baoguo Cup, and scored by heading in the [third place match](https://www.bilibili.com/video/av27530385?p=2). My favorite game is League of Legends, and I play JUNGLE and SUPPORT most of the time. My favorite book is Le Petit Prince(The Little Prince), and my favorite movie is Catch Me If You Can, though there are a great many movies I love too.
+I am a currently a senior student at [ShanghaiTech University](http://www.shanghaitech.edu.cn/eng/). I am enrolled in the [School of Infomation Science and Technology](http://sist.shanghaitech.edu.cn/sist_en/), and major in Computer Science. I love playing soccer. Usually playing in Left Back or Center Back. My best score was the third price in ShanghaiTech Baoguo Cup, and scored by heading in the [third place match](https://www.bilibili.com/video/av27530385?p=2). My favorite game is League of Legends, and I play JUNGLE and SUPPORT most of the time. My favorite book is Le Petit Prince(The Little Prince), and my favorite movie is Catch Me If You Can, though there are a great many movies I love too.
 
 Course Overview
 =====
-Shanghaitech is a new univeristy in Shanghai, the courses are mainly project-based and were heavy in work-load. Photos of most course projects are kept and if you are interested, take a look in the [course section](/course/)
+ShanghaiTech is a new univeristy in Shanghai, the courses are mainly project-based and were heavy in work-load. Photos of most course projects are kept and if you are interested, take a look in the [course section](/course/)
 
 
 Research Overview
