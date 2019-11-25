@@ -6,7 +6,8 @@ author_profile: true
 ---
 Deep-SLAM++ Object-level RGBD SLAM based on Class-specific Deep Shape Priors
 =====
-Lan Hu, Wanting Xu, *Haomin Shi*, Kun Huang and Laurent Kneip,  Submitted to ICRA 2020.
+Lan Hu, Wanting Xu, *Haomin Shi*, Kun Huang and Laurent Kneip, 
+Submitted to ICRA 2020.
 
 Aligning the impossible: Globally optimal point set registration by joint symmetry plane fitting
 ======
