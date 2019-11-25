@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: "Data Structure"
 collection: courses
 permalink: /courses/Data Structure

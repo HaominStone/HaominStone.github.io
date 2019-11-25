@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: "Computer Vision"
 collection: courses
 permalink: /courses/Computer_Vision

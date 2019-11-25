@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: "Linear Algebra"
 collection: courses
 permalink: /courses/Linear_Algebra

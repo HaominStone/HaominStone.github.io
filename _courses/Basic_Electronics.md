@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: "Basic Electronics"
 collection: courses
 permalink: /courses/Basic_Electronics
