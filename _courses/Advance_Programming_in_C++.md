@@ -7,6 +7,7 @@ date: 2019-05-10
 location: "Shanghai, China"
 ---
 Optimization of Visual Odometry System
+![Our pipeline](/images/cpp_pip.png)
 
 Doxygen File
 =====
